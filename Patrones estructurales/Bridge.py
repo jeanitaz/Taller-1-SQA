@@ -4,11 +4,11 @@ class CanalEnvio:
 
 class CorreoElectronico(CanalEnvio):
     def enviar(self, texto):
-        print(f"📧 Enviando por Correo: {texto}")
+        print(f" Enviando por Correo: {texto}")
 
 class SMS(CanalEnvio):
     def enviar(self, texto):
-        print(f"📱 Enviando por SMS: {texto}")
+        print(f" Enviando por SMS: {texto}")
 
 class Mensaje:
     def __init__(self, canal: CanalEnvio):
